@@ -25,7 +25,7 @@
       body {
         width: 100%;
         height: 961px;
-        background: url(photo3.jpg) no-repeat center top;
+        background: url(photo7.jpg) no-repeat center top;
         background-size: cover;
 
         margin: 0 0 !important;
@@ -49,7 +49,7 @@
       }
 
       .main {
-        color: #222222;
+        color: #fff;
         /* font-size: 20px; */
         font-weight: bold;
 
@@ -58,7 +58,7 @@
       }
 
       .sub {
-        color: #222222;
+        color: #fff;
         font-size: 14px;
         font-weight: 500;
 
@@ -80,14 +80,14 @@
       .wrap > a:last-child {
         width: 300px;
         height: 50px;
-        background-color: #222222;
+        background-color: #f2f2f2;
         border-radius: 8px;
 
         margin-bottom: 10px;
 
         font-size: 14px;
-        font-weight: 500;
-        color: #fff;
+        font-weight: 600;
+        color: #222;
 
         display: flex;
         flex-direction: column;
@@ -100,13 +100,34 @@
       }
 
       .wrap > a:hover {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(255, 255, 255);
       }
 
       @media (max-width: 480px) {
+        body {
+          background: url(photo4.jpg) no-repeat center top;
+
+          margin: 0 0 !important;
+        }
+
+        .main {
+          color: #222222;
+        }
+
+        .sub {
+          color: #222222;
+        }
+
         .wrap > a:nth-of-type(2),
         .wrap > a:last-child {
+          background-color: #222222;
+          color: #fff;
+
           width: 230px;
+        }
+
+        .wrap > a:hover {
+          background-color: rgba(0, 0, 0, 0.3);
         }
       }
     </style>
