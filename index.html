@@ -21,10 +21,11 @@
 
       body {
         width: 100%;
-        height: 1100px;
-
-        background: url(bg.JPG) no-repeat center top;
+        height: 1110px;
+        background: url(photo2.jpg) no-repeat center top;
         background-size: cover;
+
+        overflow-x: hidden;
       }
 
       /* .profile {
@@ -39,6 +40,10 @@
         background-position: center;
         background-size: cover;
       } */
+
+      #wrap {
+        overflow: hidden;
+      }
 
       .main {
         color: #222222;
@@ -93,6 +98,12 @@
 
       .wrap > a:hover {
         background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      @media (max-width: 400px) {
+        #wrap {
+          width: 95%;
+        }
       }
     </style>
   </head>
